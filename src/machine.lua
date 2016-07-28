@@ -1,13 +1,5 @@
 local machine = {}
 
--- m-configurations is a collection of m-configuration
--- m-configuration has the following structures
--- { ['state'] = { ['strategy'] = { ['somesymbol'] = {actions}, 
---                                  ['Any'] = {actions},
---                                  ['None'] = {actions} }, 
---                 ['changeto'] = { ['someymbol'] = '',
---                                  ['Any'] = ''} }
-
 local Machine = {m_confs = {}, start_state = '', index = 1, tape = {}}
 
 function Machine:new(m_confs, start_state)
